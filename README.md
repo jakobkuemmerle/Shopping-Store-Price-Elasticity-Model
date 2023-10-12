@@ -1,7 +1,7 @@
 # 2024-MLDS400-Group10
 
 ## Weekly Update
-# 1. Week
+### 1. Week
 1. Load the data
 - Loading each of the datasets and checking if there are any issues or loading errors:
 - dealing with importing issues due to inconsistent datastructure 
