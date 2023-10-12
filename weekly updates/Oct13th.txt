@@ -1,0 +1,10 @@
+This week's goal:
+*Understanding the data
+-Checking the data
+    1)Figure out which dataset belongs to which one. There are 13 columns but 12 things under the trnsact columns. 
+    We need to figure out the columns names
+    2)Some graphs show that they are all 0s. We need to know how to deal with them
+-Visualization
+-Questions:
+    1)How to upload them to github? In that way, we can all use the same path to see the file
+    
