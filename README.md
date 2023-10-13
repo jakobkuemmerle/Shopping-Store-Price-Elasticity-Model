@@ -14,7 +14,7 @@
 2. Understanding the data structure
 - Inserting column headers
     All the datasets come without column headers. To explore the data and understand it we inserted the correct             headers to each column.
-    For example, no column names for 'SKU' file. We need to distinguish the dataset to know which column is SKU, which column is Store, which column is Cost, or which column is Retail.
+    For example, no column names for 'SKSTINFO' file. We need to distinguish the dataset to know which column is SKU, which column is Store, which column is Cost, or which column is Retail.
 - We checked the dimensions of each data table to get an idea of the row numbers and column numbers
 - We checked the datatypes
 - We compared the columns to the meta information
