@@ -30,7 +30,7 @@
 4. Plotting (EDA)
 - Plotting histograms for all numeric value columns
 - Visualize the data box plots, scatter plots check for anything abnormal
---> anthing special?
 - we plot a correlation matrix for all columns of each dataset
 - we plot a few pairplots
---> did anyone see some interesting pattern/correlation?
+
+--> Next week we plan to investigate first correlations betwenn individual predictors and clean the data based on the initial analysis of this week.
