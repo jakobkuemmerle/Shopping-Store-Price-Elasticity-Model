@@ -14,9 +14,10 @@
 2. Understanding the data structure
 - Inserting column headers
     All the datasets come without column headers. To explore the data and understand it we inserted the correct             headers to each column.
-- We checked the dimensions of each data table to get an idea of the row numbersa and column numbers
+- We checked the dimensions of each data table to get an idea of the row numbers and column numbers
 - We checked the datatypes
 - We compared the columns to the meta information
+- We dropped irrelevant columns (STRINFO and DEPTINFO had columns of 0s and 1s)
 
 3. Summary statistics and unique values
 - We looked at the summary statistics (min, max, mean, median, ...) of each numerical value
