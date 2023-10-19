@@ -1,10 +1,10 @@
 # 2024-MLDS400-Group10
 
 ## Weekly Update
-### 1. Week
+### ~ October 13
 1. Load the data
-- Loading each of the datasets and checking if there are any issues or loading errors:
-- dealing with importing issues due to inconsistent datastructure 
+- Loading each of the datasets in jupyter notebook and checking if there are any issues or loading errors:
+- dealing with importing issues due to inconsistent data structure 
     During Exploration of Dataset "skuinfo" we found that about 8000 rows of the data have ambiguous data formats.
     Analysis resulted in the conclusion, that these rows have an addiinal comma seperated delimiter in column 10 and         therefore don't match the structure of the other rows. The commas that appears in between could be representing period instead of a comma. 
     In order to explore the data we fixed that incosistency by subsetting the 8000 rows, merging together the values of      the ambiguous columns and concetanating it with the rest of the dataset.
@@ -18,9 +18,6 @@
 - We checked the dimensions of each data table to get an idea of the row numbers and column numbers
 - We checked the datatypes
 - We compared the columns to the meta information
-- We dropped irrelevant columns 
-    - STRINFO and DEPTINFO had columns of 0s and 1s
-    - SKSTINFO has a column of 0s
 
 3. Summary statistics and unique values
 - We looked at the summary statistics (min, max, mean, median, ...) of each numerical value
@@ -33,4 +30,13 @@
 - we plot a correlation matrix for all columns of each dataset
 - we plot a few pairplots
 
---> Next week we plan to investigate first correlations betwenn individual predictors and clean the data based on the initial analysis of this week.
+#### Next step:
+- we plan to investigate first correlations between individual predictors.
+- clean the data based on the initial analysis of this week.(Figure out the extra columns in transactions)
+- upload tables to postgres
+
+### October 14 - October 20
+1. Cleaned transaction table:
+- Two columns are identical except 7 rows. We drop the 7 rows and one of the duplicate columns.
+2. 'orgprice'? has many 0.0 values, what should we do?
+
