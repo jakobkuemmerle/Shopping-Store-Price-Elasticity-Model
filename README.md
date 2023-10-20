@@ -40,3 +40,17 @@
 - Two columns are identical except 7 rows. We drop the 7 rows and one of the duplicate columns.
 2. 'orgprice'? has many 0.0 values, what should we do?
 
+3. SKUinfo table:
+Goal this week: to further understand and explore the data
+- First we checked the null values that are in each column. There are a total of 1564178 rows. For columns 0-10 (the column names for now are still numbers, we haven't figured out what each column exactly represents yet), there aren't any missing values, but for the last two columns, there are 1564158 rows that has missing values, which takes up pretty much all rows. 
+- The data type for each columns are objects, so what we did is to convert column 0, 1, 2, 3, 7, 8, and 10 to numeric. We used the describe method to check the details of each column, and we checked the correlation between those columns and plotted a heatmap to clearly depict the results from the correlation matrx:
+
+    - Column 0, 1, and 2: Column 0 has a very weak positive correlation with Column 1 (0.000502) and a weak negative correlation with variable 2 (-0.005997). These correlations are close to zero, suggesting little to no linear relationship. Variables 1 and 2 have a moderate positive correlation (0.113840).
+
+    - Column 0, 1, and 2 with Variables 7 and 8: Column 0, 1, and 2 show little to no correlation with Column 7 and 8, as the correlation coefficients are close to zero (0.001641, -0.005743, -0.009226, -0.002837, -0.033439, -0.092607).
+
+    - Column 7 and 8: Column 7 and 8 are negatively correlated (-0.099739).
+    
+    - Column 10: Column 10 also shows a weak positive correlation (0.031151) with column 7, suggesting a weak positive linear relationship between them.. 
+
+- The results for the correlatiom matrix show that most correlations are close to zero (indicating weak or no linear relationships), except for the positive correlation between variables 1 and 2 and the moderate negative correlation between variables 7 and 8. 
