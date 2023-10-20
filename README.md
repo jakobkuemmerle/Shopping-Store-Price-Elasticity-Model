@@ -37,11 +37,20 @@
 
 ### October 14 - October 20
 1. Created tables in pgAdmin 4. We can do simple SQL codes to understand the datsets in the database.
+
 2. Cleaned transaction table:
 - Two columns are identical except 7 rows. We drop the 7 rows and one of the duplicate columns.
 3. 'orgprice'? has many 0.0 values, what should we do?
 
-4. SKUinfo table:
+4. SKSTinfo table:
+- Figuring out four columns after cleaning:
+    - First column: SKU (bigint)
+    - Second column: Store (int)
+    - Third column: Cost (float)
+    - Fourth column: Retail (float)
+- Some basic descriptive statistics.
+
+5. SKUinfo table:
 Goal this week: to further understand and explore the data
 - First we checked the null values that are in each column. There are a total of 1564178 rows. For columns 0-10 (the column names for now are still numbers, we haven't figured out what each column exactly represents yet), there aren't any missing values, but for the last two columns, there are 1564158 rows that has missing values, which takes up pretty much all rows. 
 - The data type for each columns are objects, so what we did is to convert column 0, 1, 2, 3, 7, 8, and 10 to numeric. We used the describe method to check the details of each column, and we checked the correlation between those columns and plotted a heatmap to clearly depict the results from the correlation matrx:
