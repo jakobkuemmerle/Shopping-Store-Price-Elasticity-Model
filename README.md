@@ -45,7 +45,7 @@
 - quantity is almost entirely 1s except 7 rows, which are all returns, and all have very small amounts. Are these erroneous too?
 - We are certain on all column names at this point and uploaded the data to postgres
 
-4. SKSTinfo table:
+3. SKSTinfo table:
 - Figuring out four columns after cleaning:
     - First column: SKU (bigint)
     - Second column: Store (int)
@@ -53,7 +53,7 @@
     - Fourth column: Retail (float)
 - Some basic descriptive statistics.
 
-5. SKUinfo table:
+4. SKUinfo table:
 Goal this week: to further understand and explore the data
 - First we checked the null values that are in each column. There are a total of 1564178 rows. For columns 0-10 (the column names for now are still numbers, we haven't figured out what each column exactly represents yet), there aren't any missing values, but for the last two columns, there are 1564158 rows that has missing values, which takes up pretty much all rows. 
 - The data type for each columns are objects, so what we did is to convert column 0, 1, 2, 3, 7, 8, and 10 to numeric. We used the describe method to check the details of each column, and we checked the correlation between those columns and plotted a heatmap to clearly depict the results from the correlation matrx:
