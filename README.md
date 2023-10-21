@@ -40,7 +40,10 @@
 
 2. Cleaned transaction table:
 - Two columns are identical except 7 rows. We drop the 7 rows and one of the duplicate columns.
-3. 'orgprice'? has many 0.0 values, what should we do?
+- 'orgprice' has many 0.0 values, filled in some based on sku (assuming products with the same sku have the same original price). But we still have 1202550 missing prices.
+- In some rows, amount paid is greater than original price. Are these erroneous data?
+- quantity is almost entirely 1s except 7 rows, which are all returns, and all have very small amounts. Are these erroneous too?
+- We are certain on all column names at this point and uploaded the data to postgres
 
 4. SKSTinfo table:
 - Figuring out four columns after cleaning:
@@ -63,4 +66,9 @@ Goal this week: to further understand and explore the data
     
     - Column 10: Column 10 also shows a weak positive correlation (0.031151) with column 7, suggesting a weak positive linear relationship between them.. 
 
-- The results for the correlatiom matrix show that most correlations are close to zero (indicating weak or no linear relationships), except for the positive correlation between variables 1 and 2 and the moderate negative correlation between variables 7 and 8. 
+- The results for the correlation matrix show that most correlations are close to zero (indicating weak or no linear relationships), except for the positive correlation between variables 1 and 2 and the moderate negative correlation between variables 7 and 8. 
+
+#### Next step:
+- understand what data is missing, and whether the missing data is random or not.
+- fill more missing data based on information between tables 
+- develop a relevant business question
