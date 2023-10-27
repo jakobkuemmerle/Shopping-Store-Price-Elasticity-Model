@@ -79,7 +79,9 @@ Goal this week: to further understand and explore the data
 
 - We can further check the relationship between the columns next week to further identify the column information.
 
+2. We come up with some buessiness questions: 
+    - focusing on some seasonality of the sales
 
 #### Next step:
-- come up with a business question
+- come up with further business questions
 - further cleaning the data
