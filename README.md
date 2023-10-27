@@ -81,7 +81,11 @@ Goal this week: to further understand and explore the data
 
 2. We come up with some buessiness questions: 
     - focusing on some seasonality of the sales
+    - How do price changes or discount campaigns impact sales and customer behavior?
+    - Are there products that respond well to discounts, and others that do not?
+    - Some about the customer behaviors?
 
 #### Next step:
 - come up with further business questions
 - further cleaning the data
+- Visualization of the data
