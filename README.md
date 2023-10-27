@@ -72,3 +72,14 @@ Goal this week: to further understand and explore the data
 - understand what data is missing, and whether the missing data is random or not.
 - fill more missing data based on information between tables 
 - develop a relevant business question
+
+### October 21 - October 27
+1. SKUinfo table
+- We continued to do some data exploration and tried to understand the data. For the SKUinfo table, we tried to identify some columns that contain categorical values, and come up with the corresponding column names. For instance, we can initially set column 6 as color, column 7 as size, column 9 as brand. We still need to figure out the columns that contain numerical values.
+
+- We can further check the relationship between the columns next week to further identify the column information.
+
+
+#### Next step:
+- come up with a business question
+- further cleaning the data
