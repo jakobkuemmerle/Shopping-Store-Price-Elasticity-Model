@@ -75,17 +75,22 @@ Goal this week: to further understand and explore the data
 
 ### October 21 - October 27
 1. SKUinfo table
-- We continued to do some data exploration and tried to understand the data. For the SKUinfo table, we tried to identify some columns that contain categorical values, and come up with the corresponding column names. For instance, we can initially set column 6 as color, column 7 as size, column 9 as brand. We still need to figure out the columns that contain numerical values.
+- Continued EDA and cleaning up the table. 
+- After reading in the csv, some columns were shifted due to ',' within values. We identified such rows, and combined the columns back together.
+- After merging columns, a couple dozen rows do not have a valid 'vendor', but that shouldn't affect out analysis.
+- Checked that 'sku', 'dept', 'packsize', 'vendor' all have correct data types
+- Checked that 'dept' match with deptinfo table (all unique 'dept' can be found in deptinfo)
 
-- We can further check the relationship between the columns next week to further identify the column information.
+2. Some problems with the data
+- 'classid' does not match with schema description. Description showed integers of length 4, but the table has integers with length 3, and also include characters. There are 1055 unique 'classid' in the whole table, within which includes 281 unique 'classid' that contains capital letters.
 
-2. We come up with some buessiness questions: 
+3. Came up with some business questions: 
     - focusing on some seasonality of the sales
     - How do price changes or discount campaigns impact sales and customer behavior?
     - Are there products that respond well to discounts, and others that do not?
-    - Some about the customer behaviors?
+    - What about the customer behaviors?
 
 #### Next step:
-- come up with further business questions
-- further cleaning the data
-- Visualization of the data
+- Figure out classid
+- Determine what data is needed to answer business questions
+- Visualization of data to explore business questions (e.g. correlation or trend)
