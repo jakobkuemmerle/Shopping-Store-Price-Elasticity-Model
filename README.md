@@ -94,3 +94,26 @@ Goal this week: to further understand and explore the data
 - Figure out classid
 - Determine what data is needed to answer business questions
 - Visualization of data to explore business questions (e.g. correlation or trend)
+
+
+### October 28 - November 3
+1. We have conducted a preliminary meeting to gain an understanding of the datasets. This included clarifying the column names and grasping the structure of all four tables.
+
+2. Formulated a set of business questions to guide our analysis:
+- Investigating seasonality patterns in the transaction amounts (AMT).
+- Identifying customer segments and their purchasing baskets.
+- Conducting a profitability analysis.
+- Analyzing return patterns and rates.
+
+3. Addressed specific queries regarding the data:
+- Clarified the distinction between 'barcode' and 'SKU'.
+- Understood the relationship and hierarchy between 'style', 'class', and 'department'.
+- Examined 'packsize' with a focus on values other than 1.
+- Compared 'retail price' and 'original price'.
+- Explored ideas for web scraping to augment our data.
+
+
+#### Next Step:
+- Continue to seek answers to any remaining questions.
+- Proceed with further exploratory data analysis (EDA).
+- Define the overarching business question we aim to address through our analysis.
