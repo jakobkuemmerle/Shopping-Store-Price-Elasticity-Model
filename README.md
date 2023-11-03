@@ -111,6 +111,7 @@ Goal this week: to further understand and explore the data
 - Examined 'packsize' with a focus on values other than 1.
 - Compared 'retail price' and 'original price'.
 - Explored ideas for web scraping to augment our data.
+<img width="177" alt="Screen Shot 2023-11-03 at 4 07 55 PM" src="https://github.com/MSIA/2024-MLDS400-Group10/assets/122409651/38452891-3056-4360-b4d7-9264c93033d2">
 
 
 #### Next Step:
