@@ -99,11 +99,18 @@ Goal this week: to further understand and explore the data
 ### October 28 - November 3
 1. We have conducted a preliminary meeting to gain an understanding of the datasets. This included clarifying the column names and grasping the structure of all four tables.
 
-2. Formulated a set of business questions to guide our analysis:
+2. Connected to postgres from python to facilitate smooth analysis
+
+3. Formulated a set of business questions to guide our analysis:
 - Investigating seasonality patterns in the transaction amounts (AMT).
-- Identifying customer segments and their purchasing baskets.
+- Identifed baskets in transaction data (combination of 5 columns can uniquely identify a basket).
 - Conducting a profitability analysis.
 - Analyzing return patterns and rates.
+- General goal: market basket algorithm for our final results.
+- Business usecase:
+  - reccomendation system
+  - arranging display of products (which brands to put close together)
+  - customer behavior analysis (return behaviors)
 
 3. Addressed specific queries regarding the data:
 - Clarified the distinction between 'barcode' and 'SKU'.
@@ -113,10 +120,12 @@ Goal this week: to further understand and explore the data
 - Explored ideas for web scraping to augment our data.
 
 4. EDA graphs
+- We can see an increase in sales before chirstmas, and some peakes thoughout the year we assume to be holidays. We will investigate next week.
+- There is also fluctuations during the week, we plan to add weekdays/weekends during feature engineering.
 ![image (2)](https://github.com/MSIA/2024-MLDS400-Group10/assets/122409651/a129e177-83bd-47d6-9c5b-749567581f02)
 
 
 #### Next Step:
-- Continue to seek answers to any remaining questions.
-- Proceed with further exploratory data analysis (EDA).
-- Define the overarching business question we aim to address through our analysis.
+- Feature engineering (weekday/weekend, month, total amount of a basket, size of basket, list of items within the basket)
+- Generate visualizations important for our usecase, and also for the final report.
+
