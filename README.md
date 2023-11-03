@@ -124,6 +124,10 @@ Goal this week: to further understand and explore the data
 - There is also fluctuations during the week, we plan to add weekdays/weekends during feature engineering.
 ![image (2)](https://github.com/MSIA/2024-MLDS400-Group10/assets/122409651/a129e177-83bd-47d6-9c5b-749567581f02)
 
+- histogram of average basket size
+![image (3)](https://github.com/MSIA/2024-MLDS400-Group10/assets/122409651/b888820c-4429-4dc8-ad47-9bc55ee4fa67)
+
+
 
 #### Next Step:
 - Feature engineering (weekday/weekend, month, total amount of a basket, size of basket, list of items within the basket)
