@@ -128,8 +128,35 @@ Goal this week: to further understand and explore the data
 ![image (3)](https://github.com/MSIA/2024-MLDS400-Group10/assets/122409651/b888820c-4429-4dc8-ad47-9bc55ee4fa67)
 
 
-
 #### Next Step:
 - Feature engineering (weekday/weekend, month, total amount of a basket, size of basket, list of items within the basket)
 - Generate visualizations important for our usecase, and also for the final report.
+
+### November 4 - Novermber 10
+- Skst: Different stores have different prices for the same item. Action: take the non-zero average of the retail prices to fill NaN orgprice in the transaction table. Reduced missing orgprice from 1202550 to 134420
+  - Still missing orgprice from 7308 items (sku)
+  - 2417 rows with orgprice 0.01, coming from 20 items (sku)
+  - 1205238 rows with amt 0.00, coming from 11480 items (sku)
+  
+- Feature engineering:
+  - day of week: As a number (Monday=0, Sunday=6)
+  - month: As a number (January=0)
+  - weekend: 0/1 (Define weekend as Friday (4) to Sunday (6))
+  
+- Relationship between brand and dept description
+  - 1581 out of 1959 brands map to unique departments
+  - brand, classid, style might be interesting for market basket
+  - same item with different sizes/colors have different skus, maybe style could be a good identifier?
+  
+- Market basket
+  - package: apriori
+  - joined together brand to transaction
+  - identified unique baskets by combination of 5 primary keys, and listed items in the basket
+  - filtered out baskets that only had one item
+  - experimented with initial hyperparameters
+  
+#### Next week
+- More feature engineering (discount, zip code, population)
+- More market basket (tune parameters, experiment with more features)
+- ROI
 
