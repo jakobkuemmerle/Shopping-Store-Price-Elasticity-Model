@@ -154,6 +154,7 @@ Goal this week: to further understand and explore the data
   - identified unique baskets by combination of 5 primary keys, and listed items in the basket
   - filtered out baskets that only had one item
   - experimented with initial hyperparameters
+  - Ralph la & Tommy hi
   
 #### Next week
 - More feature engineering (discount, zip code, population)
