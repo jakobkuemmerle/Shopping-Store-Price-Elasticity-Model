@@ -156,8 +156,19 @@ Goal this week: to further understand and explore the data
   - experimented with initial hyperparameters
   - Ralph la & Tommy hi
   
-#### Next week
+#### Next step:
 - More feature engineering (discount, zip code, population)
 - More market basket (tune parameters, experiment with more features)
 - ROI
+
+### November 11 - November 17
+- Prepared pipeline for creating baskets and joining tables to extract information
+    - removed all Returns, only focus on Purchases
+    - calculated discount from retail and amt, defined final sale as discounts > 50%
+    - <img width="574" alt="Screen Shot 2023-11-16 at 9 42 40 AM" src="https://github.com/MSIA/2024-MLDS400-Group10/assets/122409651/3bf2bfac-260a-4b9a-b77e-2e23e38847df">
+    - <img width="623" alt="Screen Shot 2023-11-16 at 9 43 15 AM" src="https://github.com/MSIA/2024-MLDS400-Group10/assets/122409651/943f0cc0-de72-45de-b36c-ef925af2434b">
+
+### Next step:
+- Look into how to monetarize market basket
+
 
