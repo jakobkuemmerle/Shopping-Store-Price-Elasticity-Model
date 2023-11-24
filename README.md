@@ -171,4 +171,29 @@ Goal this week: to further understand and explore the data
 ### Next step:
 - Look into how to monetarize market basket
 
+### November 18 - November 24
+- Market Basket Algorithm
+    - Selection of relevant SKUs based on extensive Analysis of Shopping Patterns and Discount Strategies
+    - Identified main Discount Patterns and behaviour across stores and brands
+    - Optimized Association Rules by Tuning Hyperparameters of model and randomized subsampling
+- Price Elasticity Model
+    - Build model for popular single SKU Items using Gradient Boost
+    - Transform data to suite model and use case
+    - Predicted demand based on feature selection
+    - Evaluated that Price/ Discount is significant
+- Feature Engineering
+    - Web scraping population data (avg income, etc)
+    - Attempt to cluster Brands to reduce number of unique values
 
+### Next step:
+- Market Basket Algorithm
+    - get from 100.000 Baskets to analyzing all baskets
+    - storing results of association in useful format
+- Price Elasticity Model
+    - Enhance results by including better features
+    - More models for different items
+- Simulation
+    - Simulating different discount approaches for Associated Itemsets
+    - Predict demand for these approaches and find optimal combination
+    - Calculate ROI
+- Visualize Results
